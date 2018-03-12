@@ -226,9 +226,9 @@
 
 - Class: cmd_question
   Output: 在planets_df$diameter（planets_df的diameter列）上调用order()。 将结果存储为positions
-  CorrectAnswer: posotions <- order(planets_df$diameter)
-  AnswerTests: omnitest(correctExpr='posotions <- order(planets_df$diameter)')
-  Hint: 使用order(planets_df$diameter)来创建posotions
+  CorrectAnswer: positions <- order(planets_df$diameter)
+  AnswerTests: omnitest(correctExpr='positions <- order(planets_df$diameter)')
+  Hint: 使用order(planets_df$diameter)来创建positions
 
 - Class: cmd_question
   Output: 现在使用方括号内的posotions向量作为行索引来重新组合planets_df,保留所有列。只需打印出结果。

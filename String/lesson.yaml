@@ -57,14 +57,14 @@
     则pattern 为一个正则表达式。若fixed=TRUE，则pattern 为一个文本字符串。
   
 - Class: cmd_question
-  Output: 在"Hello There"中搜索空格并将其替换为'.'
+  Output: 在"Hello There"中搜索空格并将其替换为'.'，声明pattern为文本字符串。
   CorrectAnswer: sub(" ",".","Hello There",fixed=TRUE)
   AnswerTests: omnitest(correctExpr='sub(" ",".","Hello There",fixed=TRUE)')
   Hint: sub(" ",".","Hello There",fixed=TRUE)
   
 - Class: text
-  Output: strsplit(x, split,fixed=FALSE)在split 处分割字符向量x 中的元素。若fixed=FALSE，则pattern 为一个正则表达式。
-    若fixed=TRUE，则pattern 为一个文本字符串。
+  Output: strsplit(x, split,fixed=FALSE)在split 处分割字符向量x 中的元素。若fixed=FALSE，则split为一个正则表达式。
+    若fixed=TRUE，则split为一个文本字符串。默认fixed = FALSE,此时可以省略参数fixed。
     
 - Class: cmd_question
   Output: 使用strsplit对"abc"进行处理返回一个含有1 个成分、3 个元素的列表，包含的内容为"a" "b" "c"
