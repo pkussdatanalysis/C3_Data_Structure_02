@@ -231,10 +231,10 @@
   Hint: 使用order(planets_df$diameter)来创建positions
 
 - Class: cmd_question
-  Output: 现在使用方括号内的posotions向量作为行索引来重新组合planets_df,保留所有列。只需打印出结果。
-  CorrectAnswer: planets_df[posotions,]
-  AnswerTests: omnitest(correctExpr='planets_df[posotions,]')
-  Hint: planets_df[posotions,]
+  Output: 现在使用方括号内的positions向量作为行索引来重新组合planets_df,保留所有列。只需打印出结果。
+  CorrectAnswer: planets_df[positions,]
+  AnswerTests: omnitest(correctExpr='planets_df[positions,]')
+  Hint: planets_df[positions,]
 
 - Class: cmd_question
   Output: 创建从1到10的数值型向量my_vector
